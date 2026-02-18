@@ -3,6 +3,9 @@ An intelligent 1HP pump automation system with wireless tank-level monitoring an
 # Key Features
 # Main Controller Unit
 
+![PUMP1](https://github.com/user-attachments/assets/091e2e3d-b19f-49e0-9509-1a47763a8a53)
+
+
 16×2 LCD interface displaying real-time tank level (%), pump state, mains status, battery status, runtime timer, fault indicators, and system icons.
 
 5-key navigation (Up/Down/Left/Right/OK) implemented via single analog input using resistor ladder technique.
@@ -35,6 +38,7 @@ Very low power consumption — sleeps most of the time, wakes only to measure an
 Dynamic sleep interval: faster sampling when tank is filling (to avoid overflow), slower when discharging (to save battery).
 Transmits water level (%), battery status (good/low), charging status, and error flags.
 One-time calibration for empty (low) and full (high) levels using button + LED feedback.
+![pump2](https://github.com/user-attachments/assets/1af79237-cc8e-46be-b3d4-1b3a48f76191)
 
 # System Operation
 # Sensor Unit Operation
