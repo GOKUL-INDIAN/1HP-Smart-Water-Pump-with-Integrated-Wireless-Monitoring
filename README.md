@@ -175,10 +175,10 @@ Sensor Unit PCB → ATmega328P (8 MHz internal), ultrasonic (UART), RF transmitt
 
 The firmware source code is located in the /software/ directory and is organized by functional unit and version control.
 
-Transmitter (Sensor Unit): /software/v2.0.0/
-Latest release featuring dynamic sleep management, UART-based ultrasonic interfacing, and integrated battery/solar status transmission.
+Transmitter (Sensor Unit):
+ featuring dynamic sleep management, UART-based ultrasonic interfacing, and integrated battery/solar status transmission.
 
-Receiver (Main Controller): /software/v1.0/
+Receiver (Main Controller):
 Includes complete menu-driven user interface, LCD symbolic display framework, embedded safety logic, and EEPROM-based configuration management.
 
 # Have questions or suggestions for improvement? Please feel free to open an issue.
