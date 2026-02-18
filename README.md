@@ -1,0 +1,2 @@
+# 1HP-Smart-Water-Pump-with-Integrated-Wireless-Monitoring
+An intelligent 1HP pump automation system with wireless tank-level monitoring and autonomous ON/OFF control based on configurable thresholds. Features dry-run, under/over-voltage, and power-failure protection. Comprises an indoor LCD-based controller with relay drive and a solar-powered ultrasonic sensor node transmitting data via 433 MHz RF.
