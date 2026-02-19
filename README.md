@@ -1,9 +1,9 @@
 # 1HP-Smart-Water-Pump-with-Integrated-Wireless-Monitoring
 An intelligent 1HP pump automation system with wireless tank-level monitoring and autonomous ON/OFF control based on configurable thresholds. Features dry-run, under/over-voltage, and power-failure protection. Comprises an indoor LCD-based controller with relay drive and a solar-powered ultrasonic sensor node transmitting data via 433 MHz RF.
 # Key Features
-# Main Controller Unit
-## Main Controller Unit
+# 1. Main Controller Unit
 
+![Test](images/pump1.png)
 
 This controller manages tank level monitoring and pump automation...
 
@@ -33,7 +33,7 @@ Comprehensive fault logging (power fail, under-voltage, dry run, sensor fault, l
 Audible buzzer and visual LED alarm indication.
 
 User-accessible factory reset via system menu.
-# Sensor Unit
+# 2. Sensor Unit
 Waterproof ultrasonic sensor (DYP-A02YYTW-V2.0) for accurate tank level measurement.
 Solar panel + Li-ion battery based power source (no external power needed).
 Very low power consumption — sleeps most of the time, wakes only to measure and transmit.
@@ -42,12 +42,11 @@ Transmits water level (%), battery status (good/low), charging status, and error
 One-time calibration for empty (low) and full (high) levels using button + LED feedback.
 ![pump2](https://github.com/user-attachments/assets/1af79237-cc8e-46be-b3d4-1b3a48f76191)
 
-# System Operation
-# Sensor Unit Operation
+# 3. Sensor Unit Operation
 
 The sensor node operates in a dynamic sleep–wake cycle to optimize power consumption. At scheduled intervals, it wakes up, measures the distance to the water surface using an ultrasonic sensor, calculates the corresponding tank level percentage, verifies battery and solar charging status, and transmits 4-bit encoded data via 433 MHz RF using an HT12E encoder.
 
-# Main Controller Operation
+# 4. Main Controller Operation
 
 The controller receives RF data through an HT12D decoder. A valid transmission triggers an interrupt, and the 4 data lines (D0–D3) are sampled.
 
@@ -68,7 +67,7 @@ Mains Power Presence: Power failure confirmed with short validation (≈1 s duri
 These conditions update internal flags such as dryRunFlag, lowVoltFlag, and pwrFailFlag.
 
 # Pump Control Logic
-# Automatic Mode
+# 1. Automatic Mode
 
 The pump turns ON when:
 
@@ -84,7 +83,7 @@ Runtime timer expires
 
 Any fault condition occurs
 
-# Manual Mode
+#2. Manual Mode
 
 User can force ON/OFF via buttons, but all safety protections (dry run, low voltage, timer expiry, tank full) remain active.
 
@@ -96,7 +95,7 @@ Auto-Off Timer
 
 Acts as a final safety layer. The pump stops automatically after the configured duration even if no faults exist, and a timer alarm is generated.
 
-# User Interface & Menu System
+#3. User Interface & Menu System
 Home Screen
 
 Displays large water level percentage along with status icons (power, pump state, timer active, auto mode, battery status, RF link status, alarms).
@@ -159,7 +158,7 @@ Water level and essential status remain visible.
 
 Pump resumes operation based on previous state and fault conditions after power restoration.
 
-# Additional System Features
+#4. Additional System Features
 
 Automatic long-term system refresh (~10 days) for stability.
 
@@ -173,7 +172,7 @@ Main Controller PCB → ATmega328P, LCD via PCF8574 I2C, RF receiver + HT12D, bu
 Power PCB → VIPer22A SMPS (5V + 12V), battery charging (Li-ion TP4056 + lead-acid discrete), current sensing, dry run/low volt comparators.
 Sensor Unit PCB → ATmega328P (8 MHz internal), ultrasonic (UART), RF transmitter + HT12E, solar + Li-ion charging, power switching MOSFET.
 
-# Software Overview
+# 5. Software Overview
 
 The firmware source code is located in the /software/ directory and is organized by functional unit and version control.
 
