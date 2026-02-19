@@ -3,7 +3,8 @@ An intelligent 1HP pump automation system with wireless tank-level monitoring an
 # Key Features
 # Main Controller Unit
 
-![PUMP1](https://github.com/user-attachments/assets/091e2e3d-b19f-49e0-9509-1a47763a8a53)
+![PUMP1](https://github.com/user-attachments/assets/add6d897-ef30-4bbf-a12d-3aeaf9bd184d)
+
 
 
 16×2 LCD interface displaying real-time tank level (%), pump state, mains status, battery status, runtime timer, fault indicators, and system icons.
