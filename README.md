@@ -2,8 +2,10 @@
 An intelligent 1HP pump automation system with wireless tank-level monitoring and autonomous ON/OFF control based on configurable thresholds. Features dry-run, under/over-voltage, and power-failure protection. Comprises an indoor LCD-based controller with relay drive and a solar-powered ultrasonic sensor node transmitting data via 433 MHz RF.
 # Key Features
 # 1. Main Controller Unit
+<p align="center">
+  <img src="PUMP1.jpg" width="500"/>
+</p>
 
-![Test](images/pump1.png)
 
 This controller manages tank level monitoring and pump automation...
 
@@ -34,13 +36,15 @@ Audible buzzer and visual LED alarm indication.
 
 User-accessible factory reset via system menu.
 # 2. Sensor Unit
+<p align="center">
+  <img src="pump2.jpg" width="500"/>
+</p>
 Waterproof ultrasonic sensor (DYP-A02YYTW-V2.0) for accurate tank level measurement.
 Solar panel + Li-ion battery based power source (no external power needed).
 Very low power consumption — sleeps most of the time, wakes only to measure and transmit.
 Dynamic sleep interval: faster sampling when tank is filling (to avoid overflow), slower when discharging (to save battery).
 Transmits water level (%), battery status (good/low), charging status, and error flags.
 One-time calibration for empty (low) and full (high) levels using button + LED feedback.
-![pump2](https://github.com/user-attachments/assets/1af79237-cc8e-46be-b3d4-1b3a48f76191)
 
 # 3. Sensor Unit Operation
 
