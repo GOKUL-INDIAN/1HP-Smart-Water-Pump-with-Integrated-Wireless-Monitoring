@@ -49,6 +49,44 @@ One-time calibration for empty (low) and full (high) levels using button + LED f
 # 3. Sensor Unit Operation
 
 The sensor node operates in a dynamic sleep–wake cycle to optimize power consumption. At scheduled intervals, it wakes up, measures the distance to the water surface using an ultrasonic sensor, calculates the corresponding tank level percentage, verifies battery and solar charging status, and transmits 4-bit encoded data via 433 MHz RF using an HT12E encoder.
+# BEHIND THE SCENES PICS
+<div align="center">
+
+<img src="PCB_CHECKING.jpeg" width="500">
+
+</div>
+
+<div align="center">
+
+<img src="PUMP_TEST!.jpeg" width="500">
+
+</div>
+
+<div align="center">
+
+<img src="PUMP_TEST2.jpeg" width="500">
+
+</div>
+
+<div align="center">
+
+<img src="PUMP_TEST3.jpeg" width="500">
+
+</div>
+
+<div align="center">
+
+<img src="TRANSMITTER CHECKIN.jpeg" width="500">
+
+</div>
+
+<div align="center">
+
+<img src="FINAL PRODUCT CHECKING.jpeg" width="500">
+
+</div>
+
+
 
 # 4. Main Controller Operation
 
